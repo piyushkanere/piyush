@@ -5,7 +5,7 @@
   <title></title>
   <link href="style.css" rel="stylesheet" />
 </head>
-<body>
+<body style ="background colour : powderblue>
 
   <script src="http://ajax.googleleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>
