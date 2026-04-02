@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive CSS3 Demo</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Multi-column section */
+.columns {
+  column-count: 3;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.columns p {
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 0 0 10px;
+}
+
+/* Card with animation & transform */
+.card {
+  width: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Simple animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.animate {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .columns {
+    column-count: 1;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1><i class="fas fa-star"></i> CSS3 Demo</h1>
+</header>
+
+<section class="columns">
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p>Responsive multi-column layout.</p>
+  <p>Using modern CSS3 features.</p>
+</section>
+
+<div class="card animate">
+  <i class="fas fa-heart"></i>
+  <h3>Hover Me</h3>
+</div>
+
+</body>
+</html>
